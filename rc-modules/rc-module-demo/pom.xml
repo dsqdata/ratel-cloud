@@ -12,6 +12,9 @@
 
     <name>服务集合-演示服务</name>
     <artifactId>rc-module-demo</artifactId>
+    <properties>
+        <rc-module-demo.version>1.0-SNAPSHOT</rc-module-demo.version>
+    </properties>
     <modules>
         <module>rc-module-demo-controller</module>
         <module>rc-module-demo-entity</module>
@@ -19,6 +22,35 @@
         <module>rc-module-demo-server</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.ratel</groupId>
+            <artifactId>rc-common-swagger</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
+        <dependency>
+            <groupId>com.ratel</groupId>
+            <artifactId>rc-nacos</artifactId>
+            <version>${rc-nacos-project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${admin-server.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+
+    </dependencies>
 
 </project>

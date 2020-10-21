@@ -16,6 +16,7 @@
         <module>rc-common-bus</module>
         <module>rc-common-security</module>
         <module>rc-common-log</module>
+        <module>rc-common-swagger</module>
     </modules>
 
 

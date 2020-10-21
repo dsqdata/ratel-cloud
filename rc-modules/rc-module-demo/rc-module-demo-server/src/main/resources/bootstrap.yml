@@ -1,8 +1,6 @@
-server.port: 8080
-
 spring:
   application:
-    name: sc-gateway-server
+    name: sc-module-demo
   cloud:
     config:
       enabled: false
@@ -23,3 +21,5 @@ spring:
         group: DEFAULT_GROUP
         # 指定配置文件格式
         file-extension: yaml
+
+

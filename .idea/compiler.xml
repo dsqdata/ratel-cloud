@@ -33,6 +33,7 @@
       <module name="rc-common-bus" options="-parameters" />
       <module name="rc-common-log" options="-parameters" />
       <module name="rc-common-security" options="-parameters" />
+      <module name="rc-common-swagger" options="-parameters" />
       <module name="rc-config-nacos" options="-parameters" />
       <module name="rc-gateway" options="-parameters" />
       <module name="rc-module-demo" options="-parameters" />

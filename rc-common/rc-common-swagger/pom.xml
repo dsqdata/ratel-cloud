@@ -3,19 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>rc-module-demo</artifactId>
+        <artifactId>rc-common</artifactId>
         <groupId>com.ratel</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>rc-module-demo-server</artifactId>
-
+    <artifactId>rc-common-swagger</artifactId>
     <dependencies>
+        <!-- swagger 接口文档-->
         <dependency>
-            <groupId>com.ratel</groupId>
-            <artifactId>rc-module-demo-controller</artifactId>
-            <version>${rc-module-demo.version}</version>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
         </dependency>
     </dependencies>
+
 </project>
