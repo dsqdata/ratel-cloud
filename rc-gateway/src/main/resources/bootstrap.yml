@@ -1,0 +1,27 @@
+server.port: 8080
+
+spring:
+  application:
+    name: sc-gateway-server
+  cloud:
+    config:
+      enabled: false
+    nacos:
+      discovery:
+        # 配置中心地址
+        server-addr: localhost:8848
+        namespace: sc-gateway
+        group: DEFAULT_GROUP
+        metadata:
+          VERSION: 1.0
+          user.name: "admin"
+          user.password: "admin"
+      config:
+        # 配置中心地址
+        server-addr: localhost:8848
+        namespace: sc-gateway
+        group: DEFAULT_GROUP
+        # 指定配置文件格式
+        file-extension: yaml
+
+

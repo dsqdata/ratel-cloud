@@ -1,0 +1,29 @@
+server:
+  port: 8788
+spring:
+  application:
+    name: rc-monitor-admin-server
+  security:
+    user:
+      name: "admin"
+      password: "admin"
+
+#  邮件报警配置
+#  mail:
+#    host:
+#    username:
+#    password:
+#  boot:
+#    admin:
+#      notify:
+#        mail:
+#          to: dongsiqi@bonc.com.cn
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-common/rc-common-bus" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-common/rc-common-log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-common/rc-common-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-config-nacos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-docment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-modules" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-modules/rc-module-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-modules/rc-module-demo/rc-module-demo-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-modules/rc-module-demo/rc-module-demo-entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-modules/rc-module-demo/rc-module-demo-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-modules/rc-module-demo/rc-module-demo-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-monitor/rc-monitor-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-nacos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rc-zipkin" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

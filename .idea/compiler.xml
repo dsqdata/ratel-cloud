@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rc-module-demo-server" />
+        <module name="rc-nacos" />
+        <module name="rc-module-demo-controller" />
+        <module name="rc-module-demo-service" />
+        <module name="rc-module-demo-entity" />
+        <module name="rc-zipkin" />
+        <module name="rc-common-bus" />
+        <module name="rc-monitor-admin" />
+        <module name="rc-common-security" />
+        <module name="rc-common-log" />
+        <module name="rc-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rc-config-nacos" target="1.8" />
+      <module name="rc-service-demo-controller" target="1.5" />
+      <module name="rc-service-demo-entity" target="1.5" />
+      <module name="rc-service-demo-service" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ratel-cloud" options="-parameters" />
+      <module name="rc-common" options="-parameters" />
+      <module name="rc-common-bus" options="-parameters" />
+      <module name="rc-common-log" options="-parameters" />
+      <module name="rc-common-security" options="-parameters" />
+      <module name="rc-config-nacos" options="-parameters" />
+      <module name="rc-gateway" options="-parameters" />
+      <module name="rc-module-demo" options="-parameters" />
+      <module name="rc-module-demo-controller" options="-parameters" />
+      <module name="rc-module-demo-entity" options="-parameters" />
+      <module name="rc-module-demo-server" options="-parameters" />
+      <module name="rc-module-demo-service" options="-parameters" />
+      <module name="rc-modules" options="-parameters" />
+      <module name="rc-monitor" options="-parameters" />
+      <module name="rc-monitor-admin" options="-parameters" />
+      <module name="rc-nacos" options="-parameters" />
+      <module name="rc-service-demo-controller" options="-parameters" />
+      <module name="rc-service-demo-entity" options="-parameters" />
+      <module name="rc-service-demo-service" options="-parameters" />
+      <module name="rc-zipkin" options="-parameters" />
+    </option>
+  </component>
+</project>

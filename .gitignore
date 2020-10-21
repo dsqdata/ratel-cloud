@@ -1,0 +1,3 @@
+# Project exclude paths
+/rc-gateway/target/
+/rc-monitor/rc-monitor-admin/target/

@@ -1,0 +1,69 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8788
+        username: admin
+        password: admin
+  cloud: # spring cloud gateway 路由配置方式
+    gateway:
+      discovery:      #是否与服务发现组件进行结合，通过 serviceId(必须设置成大写) 转发到具体的服务实例。默认为false，设为true便开启通过服务中心的自动根据 serviceId 创建路由的功能。
+        locator:      #路由访问方式：http://Gateway_HOST:Gateway_PORT/大写的serviceId，其中微服务应用名默认大写访问。
+          enabled: true
+        lowerCaseServiceId: true #使用小写的serviceId,同时一定要配置StripPrefix=1
+      routes:
+        - id: sc-gateway-server
+          uri: lb://sc-gateway-server
+          predicates:
+            - Path=/v1/gateway/**
+          filters:
+            - StripPrefix=2
+      default-filters:
+        - name: Hystrix
+          args:
+            name: fallback
+            fallbackUri: forward:/fallbackhystrix
+
+# 配置输出日志
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
+
+#开启端点
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+ribbon:
+  filter:
+    metadata:
+      enabled: true
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+
+##动态路由配置
+gateway:
+  dynamic:
+    route:
+      data-id: sc-routes
+      group: DEFAULT_GROUP
